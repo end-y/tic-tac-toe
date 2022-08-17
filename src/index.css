@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body {
+  margin: 0;
+  font-family: 'Bangers', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2300132c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23001d37' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23002842' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2310324d' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%231E3D59' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background by SVGBackgrounds.com */
+}
+main{
+  display: none;
+  opacity: 0;
+  justify-content: center; 
+  flex-direction:column;
+  align-items:center;
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transition: .2s ease-in all;
+  transform: translateY(-50%);
+}
+.app{
+  border:3px solid #f5f0e1;
+  border-radius: 20px;
+  width:50%
+}
+.table{
+  display:flex;
+}
+.box{
+  position:absolute; 
+  cursor:pointer; 
+  top:0; 
+  width:100%; 
+  height:100%
+}
+.box_ic{
+  left:50%; 
+  top:50%; 
+  cursor:pointer;
+  position:absolute; 
+  transform:translate(-50%,-50%) scale(0);
+  transform-origin: center;
+  transition: 0.2s all ease;
+}
+.table_ic{
+  position:relative; 
+  padding-block:90px; 
+  flex-grow:1; 
+  text-align:"center"
+}
+.svg{
+  transition: 0.2s all ease;
+}
+.modal{
+  min-width: 250px;
+  background-color: #f5f0e1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 70px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s all ease;
+}
+.button{
+  border: 3px solid #ff6e40;
+  cursor: pointer;
+  background-color: #1E3D59;
+  color: #f5f0e1;
+  padding: 10px;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all ease-out .2s;
+  font-family: 'Bangers', cursive;
+}
